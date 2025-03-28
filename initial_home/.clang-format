@@ -1,0 +1,38 @@
+BasedOnStyle: LLVM
+
+AccessModifierOffset: -4
+AlignTrailingComments: false
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortLambdasOnASingleLine: None
+AlwaysBreakTemplateDeclarations: Yes
+ColumnLimit: 120
+FixNamespaceComments: false
+IndentWidth: 4
+NamespaceIndentation: All
+# Note: DerivePointerAlignment is false in the LLVM style
+PointerAlignment: Left
+SpaceAfterCStyleCast: true
+Standard: c++20
+
+# Formatting for #include statements is based on Google's style guide
+IncludeBlocks:   Regroup
+IncludeCategories:
+  - Regex:           '^<ext/.*\.h>'
+    Priority:        2
+    SortPriority:    0
+    CaseSensitive:   false
+  - Regex:           '^<.*\.h>'
+    Priority:        1
+    SortPriority:    0
+    CaseSensitive:   false
+  - Regex:           '^<.*'
+    Priority:        2
+    SortPriority:    0
+    CaseSensitive:   false
+  - Regex:           '.*'
+    Priority:        3
+    SortPriority:    0
+    CaseSensitive:   false
+IncludeIsMainRegex: '([-_](test|unittest))?$'
+IncludeIsMainSourceRegex: ''

@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+i386-exec -g 11100 "$1" &\
+cgdb -d gdb-multiarch -ex "file $1" -ex "target remote localhost:11100"

@@ -1,0 +1,8 @@
+services:
+  cs111-environment:
+    image: samkumar/cs111-environment:latest
+    tty: true
+    volumes:
+      - ./.cs111-student-home:/home/cs111-student
+    ports:
+      - "11122:22"
