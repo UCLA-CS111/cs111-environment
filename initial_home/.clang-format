@@ -6,12 +6,12 @@ AllowShortEnumsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: None
 AllowShortLambdasOnASingleLine: None
 AlwaysBreakTemplateDeclarations: Yes
-ColumnLimit: 120
+ColumnLimit: 80
 FixNamespaceComments: false
 IndentWidth: 4
 NamespaceIndentation: All
 # Note: DerivePointerAlignment is false in the LLVM style
-PointerAlignment: Left
+PointerAlignment: Right
 SpaceAfterCStyleCast: true
 Standard: c++20
 
