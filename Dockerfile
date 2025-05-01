@@ -53,6 +53,7 @@ RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
   libglib2.0-dev \
   rpcbind \
   manpages-posix-dev \
+  zip \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
