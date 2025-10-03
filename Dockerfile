@@ -71,7 +71,6 @@ RUN ./install_bochs.sh
 
 WORKDIR /
 COPY entrypoint.sh .
-# COPY ./bin/. ./bin
 
 RUN find /home/cs111-student/. -not -type d -not -path "./code/*" -not -name ".version" -print0 | LC_ALL=C sort -z | xargs -0 sha256sum | sha256sum > /home/cs111-student/.version
 
