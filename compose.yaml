@@ -6,3 +6,4 @@ services:
       - ./.cs111-student-home:/home/cs111-student
     ports:
       - "11122:22"
+      - "11180:11180"
